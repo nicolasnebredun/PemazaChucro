@@ -28,14 +28,7 @@
     --z-fixed: 100;
   }
 
-* {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-  list-style: none;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-}
+
 
 body, html {
     background-color: #ffffff;
@@ -98,6 +91,12 @@ header
 {
   display: flex;
   margin-top: 15px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
 }
 
 .navbarr a
