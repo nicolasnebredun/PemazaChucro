@@ -3,7 +3,6 @@
 a { color: inherit; }
 .lojas-container {
     width: 40%;
-    
     z-index:1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,14 +11,13 @@ a { color: inherit; }
     align-items: right;
     margin: 0 auto;
     transform: translateX(44.5%);
-    top: -65%;
+    top: -65.5%;
     overflow: auto;
     appearance: none;
     scrollbar-width: none;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
-    display: none;
-    }
+    display: none;    }
     max-height: 80%;    
   }
 .card {

@@ -28,4 +28,52 @@ function searchLoja() {
   
     searchLoja = debounce(searchLoja, 200);
   }
+
+  BrMap.Draw({
+    wrapper: '#br_mine', 
+    selectStates: ['ro','ac'], 
+    
+    callbacks: {
+      click: (element, uf) => {
+        if (element.id == 'state_ro') {
+          const input = document.getElementById("filter").value.toLowerCase();
+          const cardContainer = document.getElementById("lojas-container");
+          const cards = Array.from(cardContainer.getElementsByClassName("card"));
+
+          const needle = input.slice(0, 5).toLowerCase();
+          for (const card of cards) {
+            const id = card.id.toLowerCase();
+            if (id.includes("lojaro")) {
+              card.style.opacity = "1";
+              card.style.display = "";
+            } else {
+              card.style.opacity = "0";
+              card.style.display = "none";
+            }
+          }
+        }
+        else if (element.id == 'state_ac') {
+            const input = document.getElementById("filter").value.toLowerCase();
+            const cardContainer = document.getElementById("lojas-container");
+            const cards = Array.from(cardContainer.getElementsByClassName("card"));
+  
+            const needle = input.slice(0, 5).toLowerCase();
+            for (const card of cards) {
+              const id = card.id.toLowerCase();
+              if (id.includes("lojaac")) {
+                card.style.opacity = "1";
+                card.style.display = "";
+              } else {
+                card.style.opacity = "0";
+                card.style.display = "none";
+              }
+            }
+        } else {
+          alert('Não temos nenhuma loja nesse Estado!');
+        }
+      },
+      mouseover: (element, uf) => { 
+      },
+    }
+  });
   
