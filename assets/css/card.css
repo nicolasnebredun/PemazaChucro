@@ -12,7 +12,15 @@ a { color: inherit; }
     align-items: right;
     margin: 0 auto;
     transform: translateX(44.5%);
-    top: -65%;    
+    top: -65%;
+    overflow: auto;
+    appearance: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+    display: none;
+    }
+    max-height: 80%;    
   }
 .card {
     display: inline-block;

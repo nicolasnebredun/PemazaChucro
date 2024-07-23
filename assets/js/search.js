@@ -26,6 +26,6 @@ function searchLoja() {
       }
     }
   
-    searchLoja = debounce(searchLoja, 300);
+    searchLoja = debounce(searchLoja, 200);
   }
   
