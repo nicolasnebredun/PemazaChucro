@@ -1,117 +1,6 @@
-.container-section{
-    display: block;
-    justify-content: center;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin:0;
-    align-items: center;
-    z-index: 0;
-  
-}
-.container-img{
-    display: block;
-    width: 100%;
-    justify-content: center;
-    z-index: 0;
-    margin-top: 4.8%;
-
-}
-.card-branco {
-    margin:0 auto;
-    margin-top: -30%;
-    transform: translateX(-60%);
-    display:absolute;
-    position: relative;
-    width: 600px;
-    height: 280px;
-    border-radius: 16px;
-    background: #fff;
-}
-.card-azul {
-
-    margin:0 auto;
-    margin-left: 5%;
-    transform: translateY(10%);
-    width: 620px;
-    height: 300px;
-    border-radius: 16px;
-    padding: 15%;
-    background: linear-gradient(144deg,#002846,#023c68 50%,#002846);
-    transition: all 0.3s ease-out;
-}
-.card-azul:hover {
-    transform: translateY(5%) scale(1);
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.2);
-    
-}
-.card-img:hover{
-    transform: translate3D(5%) scale(1);
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.2);
-}
-.card-info{
-    display: grid;
-    align-items: grid;
-    justify-content: left;
-    line-height: 0rem;
-
-}
-.card-img{
-    width: 50%;
-    margin-top: -13%;
-  
-}
-.card-title{
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: 0rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: justify;
-    }
-.card-text{
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: justify;
-    }
-.section-2 {
-    display: grid;
-    margin-top: 15.3%;
-}
-.box-section-2{
-    display: flex;
-    width: 100%;
-    height: px;
-    background: #fff;
-    justify-content: center;
-    z-index: 0;
-}
-.title-lojas {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-right: 2%;
-    justify-content: center;
-    display: flex;
-    color: #002846;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .projcard {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 3s ease, transform 3s ease;
-}
-
-.projcard.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* Cards */
 body {
 	font-family: 'Open Sans', arial, sans-serif;
-	color: #ffffff;
+	color: #333;
 	font-size: 14px;
 }
 .projcard-container {
@@ -129,20 +18,18 @@ body {
 	width: 1000px;
 }
 .projcard {
-    
 	position: relative;
 	width: 100%;
 	height: 300px;
 	margin-bottom: 40px;
 	border-radius: 10px;
-	background-color: #002846;
-	border: 2px solid #002846;
+	background-color: #fff;
+	border: 2px solid #ddd;
 	font-size: 18px;
 	overflow: hidden;
 	cursor: pointer;
 	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
 	transition: box-shadow 0.2s ease, transform 0.2s ease;
-    
 }
 .projcard:hover {
 	box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
@@ -162,7 +49,6 @@ body {
 	background-image: linear-gradient(-250deg, #424242, transparent 50%);
 }
 .projcard-innerbox {
-    
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -182,14 +68,12 @@ body {
 	right: 0;
 }
 .projcard:hover .projcard-img {
-	transform: scale(1.05) 
+	transform: scale(1.05) rotate(1deg);
 }
 .projcard:hover .projcard-bar {
 	width: 70px;
 }
 .projcard-textbox {
-    margin-top: 2%;
-    
 	position: absolute;
 	top: 7%;
 	bottom: 7%;
@@ -204,18 +88,15 @@ body {
 .projcard-textbox::before,
 .projcard-textbox::after {
 	content: "";
-    
 	position: absolute;
 	display: block;
-	background: #002846;
+	background: #ff0000bb;
 	background: #fff;
-    
 	top: -20%;
 	left: -55px;
 	height: 140%;
-	width: 50px;
+	width: 60px;
 	transform: rotate(8deg);
-    
 }
 .projcard:nth-child(2n) .projcard-textbox::before {
 	display: none;
@@ -229,29 +110,23 @@ body {
 	display: block;
 }
 .projcard-textbox * {
-    
 	position: relative;
 }
 .projcard-title {
 	font-family: 'Voces', 'Open Sans', arial, sans-serif;
 	font-size: 24px;
-    margin-left: 5%;
-    
 }
 .projcard-subtitle {
-    
 	font-family: 'Voces', 'Open Sans', arial, sans-serif;
-	color: #fff;
-    margin-left: 7%;
+	color: #888;
 }
 .projcard-bar {
-	left: 15px;
-	width: 100px;
+	left: -2px;
+	width: 50px;
 	height: 5px;
 	margin: 10px 0;
 	border-radius: 5px;
-	background-color: #fff;
-    margin-left: 2%;
+	background-color: #424242;
 	transition: width 0.2s ease;
 }
 .projcard-blue .projcard-bar { background-color: #0088FF; }
@@ -260,7 +135,7 @@ body {
 .projcard-red .projcard-bar { background-color: #D62F1F; }
 .projcard-red::before { background-image: linear-gradient(-70deg, #D62F1F, transparent 50%); }
 .projcard-red:nth-child(2n)::before { background-image: linear-gradient(-250deg, #D62F1F, transparent 50%); }
-.projcard-green .projcard-bar { background-color: #00ff00; }
+.projcard-green .projcard-bar { background-color: #40BD00; }
 .projcard-green::before { background-image: linear-gradient(-70deg, #40BD00, transparent 50%); }
 .projcard-green:nth-child(2n)::before { background-image: linear-gradient(-250deg, #40BD00, transparent 50%); }
 .projcard-yellow .projcard-bar { background-color: #F5AF41; }
@@ -281,12 +156,10 @@ body {
 .projcard-description {
 	z-index: 10;
 	font-size: 15px;
-	color: #ffffff;
+	color: #424242;
 	height: 125px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-    margin-left: 5%;
-    
 }
 .projcard-tagbox {
 	position: absolute;
